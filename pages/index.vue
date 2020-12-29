@@ -9,10 +9,10 @@
       align-items="center"
     >
       <CLink as="nuxt-link" to="/get" color="teal.500">
-        get
+        get (useAsync)
       </CLink>
       <CLink as="nuxt-link" to="/get2" color="teal.500">
-        get2
+        get (asyncData)
       </CLink>
     </CBox>
   </div>

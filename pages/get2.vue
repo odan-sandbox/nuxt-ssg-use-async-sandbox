@@ -9,7 +9,7 @@
       align-items="center"
     >
       <CLink as="nuxt-link" to="/" color="teal.500">
-        index
+        back to index
       </CLink>
       <CText>url: {{ url }}</CText>
     </CBox>
@@ -31,7 +31,7 @@ export default Vue.extend({
     CText
   },
   async asyncData ({ $http }) {
-    console.log('get2 - asyncData')
+    console.log('get (asyncData) - asyncData')
     const body = await $http.get('https://httpbin.org/get')
 
     const url = (body as any).url

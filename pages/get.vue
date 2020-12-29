@@ -9,7 +9,7 @@
       align-items="center"
     >
       <CLink as="nuxt-link" to="/" color="teal.500">
-        index
+        back to index
       </CLink>
       <CText>url: {{ url }}</CText>
     </CBox>
@@ -31,10 +31,10 @@ export default defineComponent({
     CText
   },
   setup () {
-    console.log('get - setup')
+    console.log('get (useAsync) - setup')
     const { $http } = useContext()
     const url = useAsync(async () => {
-      console.log('get - useAsync')
+      console.log('get (useAsync) - useAsync')
       // nuxt-link による遷移時に呼ばれてしまう
       // > Much like asyncData, it won't re-run these async calls client-side.
       // > https://composition-api.nuxtjs.org/helpers/useAsync
