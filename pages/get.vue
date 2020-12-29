@@ -8,8 +8,8 @@
       justify-content="center"
       align-items="center"
     >
-      <nuxt-link to="/get">
-        get
+      <nuxt-link to="/">
+        index
       </nuxt-link>
     </CBox>
   </div>
