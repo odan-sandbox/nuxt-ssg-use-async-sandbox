@@ -31,7 +31,8 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module'
+    '@nuxtjs/stylelint-module',
+    '@nuxtjs/composition-api'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -39,7 +40,8 @@ export default {
     // https://go.nuxtjs.dev/chakra
     '@chakra-ui/nuxt',
     // https://go.nuxtjs.dev/emotion
-    '@nuxtjs/emotion'
+    '@nuxtjs/emotion',
+    '@nuxt/http'
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

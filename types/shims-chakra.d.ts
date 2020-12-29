@@ -8,4 +8,6 @@ declare module '@chakra-ui/vue' {
   export class CThemeProvider extends Vue {}
   export class CReset extends Vue {}
   export class CBox extends Vue {}
+  export class CLink extends Vue {}
+  export class CText extends Vue {}
 }

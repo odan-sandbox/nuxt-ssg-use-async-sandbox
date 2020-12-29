@@ -8,9 +8,9 @@
       justify-content="center"
       align-items="center"
     >
-      <nuxt-link to="/get">
+      <CLink as="nuxt-link" to="/get" color="teal.500">
         get
-      </nuxt-link>
+      </CLink>
     </CBox>
   </div>
 </template>
@@ -18,12 +18,14 @@
 <script lang="ts">
 import Vue from 'vue'
 import {
-  CBox
+  CBox,
+  CLink
 } from '@chakra-ui/vue'
 
 export default Vue.extend({
   components: {
-    CBox
+    CBox,
+    CLink
   }
 })
 </script>
