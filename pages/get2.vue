@@ -8,12 +8,10 @@
       justify-content="center"
       align-items="center"
     >
-      <CLink as="nuxt-link" to="/get" color="teal.500">
-        get
+      <CLink as="nuxt-link" to="/" color="teal.500">
+        index
       </CLink>
-      <CLink as="nuxt-link" to="/get2" color="teal.500">
-        get2
-      </CLink>
+      <CText>url: {{ url }}</CText>
     </CBox>
   </div>
 </template>
@@ -22,13 +20,23 @@
 import Vue from 'vue'
 import {
   CBox,
-  CLink
+  CLink,
+  CText
 } from '@chakra-ui/vue'
 
 export default Vue.extend({
   components: {
     CBox,
-    CLink
+    CLink,
+    CText
+  },
+  async asyncData ({ $http }) {
+    console.log('get2 - asyncData')
+    const body = await $http.get('https://httpbin.org/get')
+
+    const url = (body as any).url
+
+    return { url }
   }
 })
 </script>
